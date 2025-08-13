@@ -55,8 +55,8 @@ The database is normalized to reduce redundancy and improve data integrity. The 
 ### Clone the repository:
 
  ```bash
-    git clone <https://github.com/Nikotastic/prueba-de-conexion.git>
-    cd <https://github.com/Nikotastic/prueba-de-conexion.git>
+    git clone <https://github.com/Nikotastic/full-stack-database.git>
+    cd <https://github.com/Nikotastic/full-stack-database.git>
 ```
 
 ### Prerequisites
