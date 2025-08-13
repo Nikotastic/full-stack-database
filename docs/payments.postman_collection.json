@@ -31,7 +31,17 @@
 					"name": "Get customers by id",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "{{server}}/customers/2",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"customers",
+								"2"
+							]
+						}
 					},
 					"response": []
 				},
@@ -119,7 +129,17 @@
 					"name": "List of transactions daviplata",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "{{server}}/transaccion/daviplata",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"transaccion",
+								"daviplata"
+							]
+						}
 					},
 					"response": []
 				},
@@ -129,13 +149,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{server}}/pagado/cliente",
+							"raw": "{{server}}/paid/customer",
 							"host": [
 								"{{server}}"
 							],
 							"path": [
-								"pagado",
-								"cliente"
+								"paid",
+								"customer"
 							]
 						}
 					},
@@ -145,7 +165,17 @@
 					"name": "Pending invoices",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "{{server}}/invoices/pending",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"invoices",
+								"pending"
+							]
+						}
 					},
 					"response": []
 				},
@@ -153,7 +183,17 @@
 					"name": "List of transactions plataforms",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "{{server}}/transaccion/nequi-daviplata",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"transaccion",
+								"nequi-daviplata"
+							]
+						}
 					},
 					"response": []
 				},
@@ -161,7 +201,17 @@
 					"name": "List of transactions nequi",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "{{server}}/transaccion/nequi",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"transaccion",
+								"nequi"
+							]
+						}
 					},
 					"response": []
 				}
