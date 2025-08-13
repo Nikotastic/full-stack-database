@@ -1,0 +1,171 @@
+{
+	"info": {
+		"_postman_id": "1571bde9-d745-4dfc-89d3-45d6530e9e63",
+		"name": "payments",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46751854",
+		"_collection_link": "https://isaiariza.postman.co/workspace/Isai-Ariza's-Workspace~f01d5df5-340b-4de9-8dd0-cb97cafd6bd2/collection/46751854-1571bde9-d745-4dfc-89d3-45d6530e9e63?action=share&source=collection_link&creator=46751854"
+	},
+	"item": [
+		{
+			"name": "customers",
+			"item": [
+				{
+					"name": "Get all customers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/customers",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get customers by id",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Create a new customer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id_custumer\": \"201\",\n    \"full_name\": \"nikol velasquez\",\n    \"identification\": \"1013108756\",\n    \"address\": \"cra 51# 45-30\",\n    \"phone\": \"3505045930\",\n    \"email\": \"velasqueznikol10@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server}}/customers",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update customer",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id_custumer\": \"201\",\n    \"full_name\": \"nikol velasquez\",\n    \"identification\": \"1013108756\",\n    \"address\": \"cra 51# 45-30\",\n    \"phone\": \"3505045930\",\n    \"email\": \"nikocrack12@outlook.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server}}/customers/201",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"customers",
+								"201"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete customer",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id_custumer\": \"201\",\n    \"full_name\": \"nikol velasquez\",\n    \"identification\": \"1013108756\",\n    \"address\": \"cra 51# 45-30\",\n    \"phone\": \"3505045930\",\n    \"email\": \"nikocrack12@outlook.com\"\n}"
+						},
+						"url": {
+							"raw": "{{server}}/customers/201",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"customers",
+								"201"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Advanced queries",
+			"item": [
+				{
+					"name": "List of transactions daviplata",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Total paid by each customer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/pagado/cliente",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"pagado",
+								"cliente"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pending invoices",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "List of transactions plataforms",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "List of transactions nequi",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
